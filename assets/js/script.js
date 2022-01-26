@@ -20,7 +20,7 @@ $(document).ready(function() {
     },
   ]
 
-  if (window.location.href.indexOf("index") > -1) {
+  $(document).ready( function() {
 
     carouselSlides.forEach((slide, i) => {
       $('.carousel-inner').append(`
@@ -42,6 +42,6 @@ $(document).ready(function() {
       </div>
     </div>`)
     })
-  }
+  });
 
 });
